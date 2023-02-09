@@ -3,15 +3,35 @@ import styled from 'styled-components';
 const Container = styled.div`
   height: 70px;
   width: 100%;
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(254,231,21,1) 27%);
+  background-color: #FEE715FF;
+  
 `;
-const Title = styled.div``;
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 100%;
+`;
+const Title = styled.div`
+   font-size: 25px;
+   font-family: 'Itim', cursive;
+`;
+const Links = styled.div``;
+const LinkItem = styled.a`
+  font-size: 20px;
+`;
 
 function Header() {
   return (
-    <Container>
-      <Title>Em😂ji Book</Title>
-    </Container>
+      <Container>
+          <Wrapper>
+              <Title>Em😂ji Book</Title>
+              <Links>
+                  <LinkItem href='#'>Dev</LinkItem>
+              </Links>
+          </Wrapper> 
+      </Container>
   )
 }
 
